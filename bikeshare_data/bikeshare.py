@@ -76,17 +76,17 @@ def time_stats(df):
     most_common_month = df['month'].mode()[0] 
 
     
-    print('Most common month is: ', most_common_month)# TO DO: display the most common month
+    print('Most common month is: {}'.format(most_common_month))# TO DO: display the most common month
     
     most_common_day =  df['day_of_week'].mode()[0]
 
 
-    print('\nMost common day of the week is: ', most_common_day)# TO DO: display the most common day of week
+    print('\nMost common day of the week is: {}'.format(most_common_day))# TO DO: display the most common day of week
 
 
     most_common_hour = df['Start Time'].dt.hour
     most_common_hour = most_common_hour.mode()[0]
-    print('\nMost common start hour is: ', most_common_hour)# TO DO: display the most common start hour
+    print('\nMost common start hour is: {}'.format(most_common_hour))# TO DO: display the most common start hour
 
 
     print("\nThis took %s seconds." % (time.time() - start_time))
@@ -106,13 +106,13 @@ def station_stats(df):
 
     mst_common_end_station = df['End Station'].mode()[0]
         
-    print('\nMost common end station is: ', mst_common_end_station)   # TO DO: display most commonly used end station
+    print('\nMost common end station is: {}'.format(mst_common_end_station))   # TO DO: display most commonly used end station
 
 
     mst_common_combo =  df['Start Station'] + ' and ' + df['End Station']
     mst_common_combo = mst_common_combo.mode()[0] 
     
-    print('\nMost common station combination is: ', mst_common_combo)# TO DO: display most frequent combination of start station and end station trip
+    print('\nMost common station combination is: {}'.format(mst_common_combo))# TO DO: display most frequent combination of start station and end station trip
 
 
     print("\nThis took %s seconds." % (time.time() - start_time))
