@@ -13,5 +13,5 @@ The Bikeshare project is about an interactive database that calculates statistic
 bikeshare.py
 
 ### Credits
-Udacity 
+Udacity, freeCodeCamp
 
