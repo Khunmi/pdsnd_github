@@ -162,7 +162,7 @@ def user_stats(df):
             break
     
 def display_data_request(df):
-    """Displays user request on bikeshare data."""
+    """Displays user request on bikeshare data statistics."""
     
     view_data = input('\nWould you like to view 5 rows of individual trip data? Enter yes or no\n').lower()
     start_loc = 0
